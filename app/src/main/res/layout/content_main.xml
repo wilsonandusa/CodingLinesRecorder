@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+        <TextView
+            android:id="@+id/theTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:paddingTop="60dp"
+            android:text="Total number of lines:" />
+
+        <TextView
+            android:id="@+id/numOfLines"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/theTitle"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:text="0"
+            android:textSize="45dp"
+            />
+
+
+        <EditText
+            android:id="@+id/userInput"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numOfLines"
+            android:layout_centerInParent="true"
+            android:hint="How many lines of code did you write today?"
+            />
+
+
+
+        <Switch
+            android:id="@+id/addSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInput"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:text="Switch on to add lines "
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addSwitch"
+            android:layout_marginTop="20dp"
+            android:text="UPDATE"
+            android:layout_centerInParent="true"
+            />
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/userInput"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3">-->
+            <!--<TextView-->
+                <!--android:id="@+id/textAdd"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Add"-->
+                <!--android:textSize="20dp"-->
+                <!--android:gravity="center"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textMinus"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Minus"-->
+                <!--android:textSize="20dp"-->
+                <!--android:gravity="center"/>-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
